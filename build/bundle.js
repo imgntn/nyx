@@ -12627,6 +12627,10 @@ return jQuery;
 var Backbone = require('backbone');
 var $ = require('jquery');
 
+
+var myRootRef = new Firebase('https://jbpframework.firebaseIO.com/');
+myRootRef.set("hello");
+
 var AppView = require('./views/test');
 var appView = new AppView();
 },{"./views/test":14,"backbone":1,"jquery":10}],13:[function(require,module,exports){

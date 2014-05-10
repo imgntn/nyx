@@ -1,2 +1,4 @@
+static-filserver/config/
+static-fileserver/firebase.json
 node_modules/
 .DS_Store

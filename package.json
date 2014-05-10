@@ -37,6 +37,7 @@
     "gulp-open": "~0.2.8",
     "connect": "~2.15.0",
     "beefy": "~1.1.0",
-    "gulp-concat-css": "~0.1.4"
+    "gulp-concat-css": "~0.1.4",
+    "request": "~2.34.0"
   }
 }
