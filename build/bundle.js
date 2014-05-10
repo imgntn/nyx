@@ -12626,26 +12626,9 @@ return jQuery;
 },{}],12:[function(require,module,exports){
 var Backbone = require('backbone');
 var $ = require('jquery');
-Backbone.$ = $;
- var AppView = require('./views/test');
-           var appView = new AppView();
-var AppRouter = Backbone.Router.extend({
-        routes: {
-            "*": "defaultRoute" // matches http://example.com/#anything-here
-        }
-    });
-    // Initiate the router
-    var app_router = new AppRouter;
 
-        app_router.on('route:defaultRoute', function(actions) {
-        	console.log('HIT DEFAULT ROUTE11')
-        	 var AppView = require('./views/test');
-           var appView = new AppView();
-    })
-
-    // Start Backbone history a necessary step for bookmarkable URL's
-    Backbone.history.start();
-
+var AppView = require('./views/test');
+var appView = new AppView();
 },{"./views/test":14,"backbone":1,"jquery":10}],13:[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var Handlebars = require('hbsfy/runtime');
@@ -12655,7 +12638,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, helper, functionType="function", escapeExpression=this.escapeExpression;
 
 
-  buffer += "<div class=\"container\">\n \n<div class=\"row header-row\">\n<div class=\"col-xs-12\">Header</div>\n</div>\n\n<div class=\"row\">\n<div class=\"col-xs-12\">\n	<button class=\"btn btn-info\">press me</button>\n\n	Body ";
+  buffer += "<div class=\"container\">\n \n<div class=\"row header-row\">\n<div class=\"col-xs-12\">Header</div>\n</div>\n\n<div class=\"row\">\n<div class=\"col-xs-12\">Body ";
   if (helper = helpers.test) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.test); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
@@ -12671,7 +12654,6 @@ var template = require("../templates/test.hbs");
 
 module.exports = Backbone.View.extend({
   initialize: function(){
-    console.log('wuuut')
     this.render();
   },
 

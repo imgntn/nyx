@@ -1,5 +1,5 @@
 {
-  "name": "thistle",
+  "name": "gulp-browserify-backbone-bootstrap",
   "version": "0.0.0",
   "description": "",
   "main": "src/index.js",
@@ -13,14 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:imgntn/thistle-web.git"
+    "url": "git@github.com:imgntn/gulp-browserify-backbone-bootstrap.git"
   },
   "author": "james b. pollack",
   "license": "all rights reserved",
-  "bugs": {
-    "url": "https://github.com/imgntn/thistle-web/issues"
-  },
-  "homepage": "https://github.com/imgntn/thistle-web",
   "devDependencies": {
     "underscore": "~1.6.0",
     "backbone": "~1.1.2",

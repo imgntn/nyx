@@ -5,7 +5,6 @@ var template = require("../templates/test.hbs");
 
 module.exports = Backbone.View.extend({
   initialize: function(){
-    console.log('wuuut')
     this.render();
   },
 
