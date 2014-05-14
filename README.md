@@ -1,25 +1,35 @@
 jbpframework
 ==================================
 
-starter project with livereload.
+starter framework for client side javascript applications.
 
-run this as the client side app with a small backend for handling charges / firebase events
+setup node packages:<br>
+<code>npm install</code>
+
+start a development environment:
+(turn on livereload extension in your browser)<br>
+<code>gulp</code>
+
+release:<br>
+<code>gulp build</code>
+
+
 
 build tools:
-gulp
-browserify
+
+gulp, browserify
 
 utility libraries:
-underscore
-backbone
-jquery
+
+underscore, backbone, jquery
 
 front end libraries:
+
 bootstrap
 
 data integrations:
-firebase
-firebase simple login (facebook)
+
+firebase, firebase simple login (facebook)
 
 payment integrations:
 stripe
@@ -27,14 +37,3 @@ stripe
 fonts:
 fontawesome
 
-<code>
-setup node packages:
-npm install
-
-start a development environment:
-gulp
-(turn on livereload extension in your browser)
-
-release:
-gulp build
-</code>
