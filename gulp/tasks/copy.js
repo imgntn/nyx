@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 
-gulp.task('copy', function(){
+gulp.task('copy', ['browserify'],function(){
   gulp.src('./index.html')
     .pipe(gulp.dest('static-fileserver'));
 
